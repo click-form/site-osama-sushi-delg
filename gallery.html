@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osama Sushi Славута - Галерея</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-100 font-sans">
+    <nav class="sticky top-0 z-50 bg-neutral-900/90 backdrop-blur-md border-b border-neutral-800 h-20 flex items-center justify-between px-6 max-w-7xl mx-auto">
+        <a href="index.html" class="text-2xl font-bold text-amber-400">Osama Sushi</a>
+        <div class="hidden md:flex space-x-2">
+            <a href="index.html" class="hover:bg-amber-500/10 rounded-lg px-4 py-2 transition">Головна</a>
+            <a href="about.html" class="hover:bg-amber-500/10 rounded-lg px-4 py-2 transition">Про нас</a>
+            <a href="services.html" class="hover:bg-amber-500/10 rounded-lg px-4 py-2 transition">Меню</a>
+            <a href="gallery.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 transition">Галерея</a>
+            <a href="booking.html" class="hover:bg-amber-500/10 rounded-lg px-4 py-2 transition">Забронювати</a>
+            <a href="contacts.html" class="hover:bg-amber-500/10 rounded-lg px-4 py-2 transition">Контакти</a>
+        </div>
+    </nav>
+
+    <div class="max-w-6xl mx-auto px-6 py-4">
+        <nav class="text-sm text-neutral-400">
+            <a href="index.html" class="hover:text-amber-400">Головна</a> > <span class="text-amber-400">Галерея</span>
+        </nav>
+    </div>
+
+    <section class="py-12 px-6 max-w-6xl mx-auto">
+        <h1 class="text-4xl font-bold mb-10 text-amber-400 text-center">Галерея страв</h1>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="aspect-square overflow-hidden rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center">
+                <span class="text-amber-400 font-bold">Роли</span>
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center">
+                <span class="text-amber-400 font-bold">Сети</span>
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center">
+                <span class="text-amber-400 font-bold">Суші</span>
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center">
+                <span class="text-amber-400 font-bold">Інгредієнти</span>
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center">
+                <span class="text-amber-400 font-bold">Заклад</span>
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center">
+                <span class="text-amber-400 font-bold">Упаковка</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-neutral-900 text-neutral-300 py-12 border-t border-neutral-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Osama Sushi</h3>
+                <p>Найсмачніші суші у Славуті з доставкою та на самовинос.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Контакти</h3>
+                <p>вулиця Соборності, Славута</p>
+                <p>Телефон: +380634558517</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Навігація</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-amber-400">Головна</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400">Меню</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
